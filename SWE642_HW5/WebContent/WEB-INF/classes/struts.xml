@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+ 
+<struts>
+	<constant name="struts.custom.i18n.resources" value="global" />
+  
+	<package name="default" namespace="/" extends="struts-default">
+
+       <result-types>
+       
+       <result-type name="tiles" class="org.apache.struts2.views.tiles.TilesResult">
+       
+       </result-type>       
+       </result-types>		
+
+		
+		<action name="saveform" class="controller.Driver" method="send">					
+			<result name="lost" type="tiles">Simple</result> 
+			<result name="win" type="tiles">Win</result>
+			<result name="back" type="tiles">Survey</result>
+		</action>
+		<action name="retrieveform" class="controller.Driver" method="retrieve">					
+			<result name="success" type="tiles">StudentInfo</result> 
+			<result name="back" type="tiles">NoStudent</result>
+		</action>
+	</package>
+
+</struts>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+"-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+"http://struts.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+ 
+   <definition name="Simple" template="my-layout.jsp">
+    <put-attribute name="pagetitle" value="simple acknowledgement"/>
+	<put-attribute name="header" value="/header.jsp" />
+	<put-attribute name="body" value="/SimpleAcknowledgement.jsp"/>
+	<put-attribute name="footer" value="/footer.jsp" />	
+   </definition>
+   
+   <definition name="Win" template="my-layout.jsp">
+    <put-attribute name="pagetitle" value="winner congratulation"/>
+	<put-attribute name="header" value="/header.jsp" />
+	<put-attribute name="body" value="/WinnerAcknowledgement.jsp"/>
+	<put-attribute name="footer" value="/footer.jsp" />	
+   </definition>
+   
+    <definition name="StudentInfo" template="my-layout.jsp">
+    <put-attribute name="pagetitle" value="student information"/>
+	<put-attribute name="header" value="/header.jsp" />
+	<put-attribute name="body" value="/StudentJSP.jsp"/>
+	<put-attribute name="footer" value="/footer.jsp" />	
+    </definition>
+      
+   
+   <definition name="Survey" template="my-layout.jsp">
+    <put-attribute name="pagetitle" value="survey page"/>
+	<put-attribute name="header" value="/header.jsp" />	
+	<put-attribute name="footer"   value="/footer.jsp"/>
+	<put-attribute name="body" value="/Survey.jsp" />
+    </definition>
+    
+    <definition name="NoStudent" template="my-layout.jsp">
+    <put-attribute name="pagetitle" value="error page"/>
+	<put-attribute name="header" value="/header.jsp" />	
+	<put-attribute name="body" value="/NoStudent.jsp"/>
+	<put-attribute name="footer" value="/footer.jsp" />
+	</definition>
+ 
+</tiles-definitions>

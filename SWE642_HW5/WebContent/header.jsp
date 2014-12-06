@@ -1,0 +1,2 @@
+<a href="http://cs.gmu.edu"><img src = "image/cslogo.png"width="1280" height="100" padding="0" 
+ padding-top="2" border="0" margin="0"  border-bottom:"3"          align="middle"  alt = "CS Department of GMU" /></a>
